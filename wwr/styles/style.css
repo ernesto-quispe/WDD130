@@ -248,3 +248,138 @@ footer p a:hover {
         margin-top: 25px;
     }
 }
+
+
+
+
+ /* RIVERS HTML */ 
+
+.rivers-grid {
+    margin: 40px;
+    width: 100%;
+   /* display: grid;
+    grid-template-columns: repeat(8, 1fr);*/
+    margin: 0;
+    padding: 1em 0;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+.utah-canyon {
+    position: relative;
+    max-width: 1600px;
+    background-color: #222222;
+    border-radius: 10px;
+    box-shadow: 8px 0 15px #8C8C8C;
+    margin-bottom: 100px;
+  }
+  .utah-headline {
+    position: absolute; 
+    margin-top: 60px;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: #8C8C8C;
+    margin-left: 250px;
+    text-align: center;
+    background-color: rgba(140, 140, 140);
+    width: 100%;
+    padding: 15px 0 15px 0;
+   
+  }
+  .utah-headline-2 {
+    text-align: left;
+    color: #FFCC00;
+    padding: 10px;
+ }
+  .utah-paragraph-1 {
+    padding: 15px;
+    font-weight: 600;
+    color: #FEFEFF; 
+  }
+  .idaho-river {
+    position: relative;
+    max-width: 1600px;
+    background-color: #ffcc00;
+    border-radius: 10px;
+    box-shadow: 8px 0 15px #8C8C8C;
+    margin-bottom: 100px;
+  }
+  .idaho-headline {
+    position: absolute; 
+    margin-top: 60px;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: #8C8C8C;
+    margin-left: 250px;
+    text-align: center;
+    background-color: rgba(140, 140, 140);
+    width: 100%;
+    padding: 15px 0 15px 0;
+   
+  }
+  .idaho-headline-2 {
+    text-align: left;
+    color: #222222;
+    padding: 10px;
+ }
+  .idaho-paragraph-1 {
+    padding: 15px;
+    font-weight: 600;
+     color: #222222;
+  }
+  .arizona-canyon {
+    position: relative;
+    max-width: 1600px;
+    background-color: #222222;
+    border-radius: 10px;
+    box-shadow: 8px 0 15px #8C8C8C;
+    margin-bottom: 100px;
+  }
+  .arizona-headline {
+    position: absolute; 
+    margin-top: 60px;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    letter-spacing: 3px;
+    color: #8C8C8C;
+    margin-left: 250px;
+    text-align: center;
+    background-color: rgba(140, 140, 140);
+    width: 100%;
+    padding: 15px 0 15px 0;
+   
+  }
+  .arizona-headline-2 {
+    text-align: left;
+    color: #FFCC00;
+    padding: 10px;
+  }
+  .arizona-paragraph-1 {
+    padding: 15px;
+    font-weight: 600;
+    color: #FEFEFF;  
+  }
+  .river-image-1 {
+    border-radius: 0 0 10px 10px;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  #hero-msg .rivers-title{
+    color: #222222;
+    font-size: 2em;
+    margin-top: 10px; 
+  }
+  .utah-canyon, .arizona-canyon, .idaho-river {
+   max-width: 80%;
+   margin: auto;
+   margin-top: 40px;
+   padding-bottom: 0;
+}
+  .utah-canyon:hover, .arizona-canyon:hover, .idaho-river:hover {
+    /* opacity: .6; */
+    transform: scale(1.1);
+}
