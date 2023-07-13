@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Las Condes | Contact Us</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <div id="content"> 
+    <div id="content">
       <header>
         <a id="logo_link" href="index.html">
-          <img class="logo" src="images/w10/rsz_3lascondes-logostransparent.png" alt="Las Condes Logo" />
+          <img
+            class="logo"
+            src="images/w10/rsz_3lascondes-logostransparent.png"
+            alt="Las Condes Logo"
+          />
         </a>
         <nav>
           <a href="index.html">Home</a>
@@ -22,76 +26,109 @@
       <div id="hero">
         <div id="hero-box">
           <img
-            id="contactus-img"
+            id="hero-img"
             src="images/w10/rsz_3pexels-tima-miroshnichenko-5453899.jpg"
             alt="Woman doing phone support"
           />
         </div>
       </div>
 
-      <main class="contactus-grid">
+      <main>
+        <div class="contactus-grid">
 
-        <section class="msg">
-            <h2>Contact Us</h2>
-            <p>
-                We have a series of services focused directly on attending and solving the presentations, requests, and claims made by the residents and users of the commune. We provide information of a communal and municipal nature that is not of an emergency or urgent nature, but that does require municipal management in the territory of the commune. Our Neighborhood Assistance Department (DAV) is the only channel that ensures residents an effective and official response from the municipality in a short period of time. Its main function is to ensure a timely response to the residents.
-            </p>
-        </section>
+          <div class="content-map">
 
-        <section class="container-contactus">
-            <div class="card-contactus">
-                <img
+            <div class="mapouter">
+              <iframe
+                class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106557.67523324923!2d-70.51753634999999!3d-33.42513835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cc2ec8c925bd%3A0x82ed9a4180d925d0!2sLas%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1689200116525!5m2!1ses-419!2scl"
+              ></iframe>
+            </div>
+
+            <div class="card-phone">
+              <img
                 id="phone-img"
                 src="images/w10/rsz_2phone_4307.png"
                 alt="Black phone"
-                 />
-                <h3>Call Us</h3>
-                <p>+562 2654 3570</p>
+              />
+              <div class="overlay">
+                 <div class="text">+562 2654 3570</div>
+              </div>   
             </div>
-            <div class="card-contactus">
-                <img
+
+            <div class="card-calendar">
+              <img
                 id="calendar-img"
                 src="images/w10/organizer_calendar_clock_pencil_10047.png"
                 alt="Calendar with pencil and clock"
-                 />
-                <h3>Hours</h3>
-                <p>Monday and Friday from 08:30 a.m. to 2:00 p.m.</p>
+              />
+              <div class="overlay">
+                  <div class="text">Monday to Friday from 08:30 a.m. to 2:00 p.m.</div>
+             </div>   
             </div>
-        </section>
+          </div>
 
-        <section class="container-maps-form" id="myForm">
-            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=lascondes&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div></div>
-            <!-- form -->
-          <form action="#" method="post">
-            <ul>
-              <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" />
-              </li>
-              <li>
-                <label for="mail">Email:</label>
-                <input type="email" id="mail" name="user_email" />
-              </li>
-              <li>
-                <label for="msg">Reason:</label>
-                <input type="radio" id="question" name="question" value="question">
-                <label for="question">Question</label>
-                <input type="radio" id="complaint" name="complaint" value="complaint">
-                <label for="complaint">Complaint</label>
-                <input type="radio" id="other" name="other" value="other">
-                <label for="other">Other</label>
-              </li>
-              <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </li>
-              <li class="button">
-                <button type="submit">Send your message</button>
-              </li>
-            </ul>
-          </form>
-        </section>
-
+          <section class="contactus-msg">
+            <h2>Contact Us</h2>
+            <p>
+              We have a series of services focused directly on attending and
+              solving the presentations, requests, and claims made by the
+              residents and users of the commune. We provide information of a
+              communal and municipal nature that is not of an emergency or
+              urgent nature, but that does require municipal management in the
+              territory of the commune. Our Neighborhood Assistance Department
+              (DAV) is the only channel that ensures residents an effective and
+              official response from the municipality in a short period of time.
+              Its main function is to ensure a timely response to the residents.
+            </p>
+          </section>
+          <div class="myForm">
+            <form action="POST">
+              <ul>
+                <li>
+                  <input type="text" id="name" name="user_name" placeholder="Full name" required/>
+                </li>
+                <li>
+                  <input type="email" id="mail" name="user_email" placeholder="username@domain.com" required/>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="question"
+                    name="reason"
+                    value="question"
+                    required
+                  />
+                  <label for="question">Question</label>
+                  <input
+                    type="radio"
+                    id="complaint"
+                    name="reason"
+                    value="complaint"
+                    required
+                  />
+                  <label for="complaint">Complaint</label>
+                  <input 
+                     type="radio" 
+                     id="other" 
+                     name="reason" 
+                     value="other"
+                     required
+                   />
+                  <label for="other">Other</label>
+                </li>
+                <li>
+                  <!-- <label for="msg">Message:</label> -->
+                  <textarea name="user_message" id="msg" cols="60" rows="5" placeholder="Your message" required></textarea>
+                </li>
+                <li class="button">
+                  <button type="submit">Send your message</button>
+                </li>
+              </ul>
+            </form>
+          </div>
+            <div id="feedback"></div>
+        </div>
       </main>
 
       <footer>
@@ -99,7 +136,6 @@
         <p><a href="site-plan.html">Site Plan</a></p>
         <p><a href="contactus.html">Contact Us</a></p>
         <div class="social">
-
           <a href="https://facebook.com" target="_blank">
             <img src="images/w10/facebook.png" alt="fb icon" />
           </a>
@@ -111,9 +147,46 @@
           <a href="https://instagram.com" target="_blank">
             <img src="images/w10/instagram.png" alt="instagram icon" />
           </a>
-
         </div>
       </footer>
     </div>
+
+
+
+          <!-- Script to emulate backend behavior -->
+      <script>
+        // get the feedback div element so we can do something with it. <div id="feedback"></div>
+        const feedbackElement = document.getElementById('feedback');
+
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function (e) {
+
+            e.preventDefault(); // stop the form from doing the default action
+
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. 
+            // Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+
+            feedbackElement.style.display = "block"; // make the feedback element visible.
+
+            document.body.classList.toggle('moveDown'); // add a class to move everything down so our message doesn't cover it.
+            setTimeout(function(){
+              feedbackElement.style.display = "none";
+              formElement.reset();
+            },5000)
+            
+        });
+        // Scroll document to top
+        // Ref: https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        function scrollTop() {
+          // This line makeit work on Safari
+          document.body.scrollTop = 0;
+          // This line make it work on Firefox, Chrome, Edge, and Opera
+          document.documentElement.scrollTop = 0;
+        }
+  </script>
   </body>
 </html>

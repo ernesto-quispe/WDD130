@@ -254,11 +254,117 @@ body{
 
 
 
+ /* CONTACTUS HTML */ 
 
-
-
-
-
+ .contactus-msg{
+    background-color: #1CD1C5;
+    color: #1C1C1C;
+    border-color: #1C1C1C;
+    border-radius: 15px;
+    border-style: solid;
+    max-width: 90%;
+    margin: auto;
+  }
+  .contactus-msg h2{
+     color: #1C1C1C;
+  }
+  .contactus-grid {
+    margin: auto;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    justify-items: center;
+    background-color :rgba(252, 252, 255);
+    padding-bottom: 30px;
+  }
+  .content-map{
+    grid-column: 1/3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 75px);
+    margin-bottom: 25px;
+}
+.mapouter {
+    text-align: center;
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 1/8;
+  }
+ .map{
+    width: 1400px;
+    height: 450px; 
+    border:0;
+ }
+  .card-phone {
+    padding: 5px;
+    /* margin: 10px;  */
+    margin: auto;
+    box-shadow: 0 15px 20px #999; 
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    background-color: #FEFEFF;
+    width: 150px;
+    height: 150px;
+    grid-column: 1;
+    grid-row: 6/8;
+    position: relative;
+  }
+  .card-calendar {
+    padding: 5px;
+    /* margin: 10px;  */
+    margin: auto;
+    box-shadow: 0 15px 20px #999; 
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    background-color: #FEFEFF;
+    width: 150px;
+    height: 150px;
+    grid-column: 2;
+    grid-row: 6/8;
+    position: relative;
+  }
+  .card-phone:hover .overlay, .card-calendar:hover .overlay {
+    opacity: 1;
+  }
+  
+  .myForm {
+    padding: 5px;
+    box-shadow: 0 15px 20px #999; 
+    text-align: center;
+    position: relative;
+    width: 600px;
+    background-color: #1CD1C5;
+    color: #1C1C1C;
+    border-color: #1C1C1C;
+    border-radius: 15px;
+    border-style: solid;
+  }
+  .card-phone .overlay .text {
+    width: 100%;
+  }
+  .myForm ul{
+    list-style: none;
+  }
+input[type=text], input[type=email]{ 
+    width: 80%;
+}
+button{
+    background-color: #1C1C1C;
+    color: #1CD1C5;
+    padding: 10px;
+    font-size: 1em;
+}
+#feedback{
+    display: none;
+    text-align: center;
+    grid-column: 2;
+    background-color: #FFCC00;
+    padding: 7px;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -315,4 +421,42 @@ body{
     .events-msg{
         max-width: 100%;
     }
+    .contactus-grid{
+        display: block;
+
+    }
+    .content-map{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto auto;
+    }
+    .mapouter{
+        max-width: 100%;
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .map{
+        max-width: 100%;
+    }
+    textarea{
+       max-width: 80%; 
+       font-size: 1.5em;
+    }
+    .myForm{
+        max-width: 88%;
+        margin: auto;
+        margin-top: 10px;
+    }
+    input{
+        font-size: 1em;
+    }
+    .card-phone{
+        margin: auto;
+        grid-row: 2;
+    }
+    .card-calendar{
+        margin: auto;
+        grid-row: 2;
+    }
+
 }
