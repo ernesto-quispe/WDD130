@@ -252,21 +252,23 @@ body{
 }
 
 
-
-
  /* CONTACTUS HTML */ 
 
  .contactus-msg{
     background-color: #1CD1C5;
+    box-shadow: 0 15px 20px #999; 
     color: #1C1C1C;
     border-color: #1C1C1C;
     border-radius: 15px;
     border-style: solid;
     max-width: 90%;
-    margin: auto;
+    text-align: left;
+    padding: 15px;
+    font-size: 1.25em;
   }
   .contactus-msg h2{
      color: #1C1C1C;
+     text-align: center;
   }
   .contactus-grid {
     margin: auto;
@@ -336,21 +338,37 @@ body{
     box-shadow: 0 15px 20px #999; 
     text-align: center;
     position: relative;
-    width: 600px;
+    width: 90%;
     background-color: #1CD1C5;
     color: #1C1C1C;
     border-color: #1C1C1C;
     border-radius: 15px;
     border-style: solid;
+    font-size: 1.25em;
   }
   .card-phone .overlay .text {
     width: 100%;
   }
   .myForm ul{
     list-style: none;
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
   }
-input[type=text], input[type=email]{ 
+  .label-form{
+    display: inline-block;
+    text-align: right;
+    width: 90px;
+  }
+
+input[type=text], input[type=email], textarea{ 
     width: 80%;
+    margin: 5px;
+    /* padding: 5px; */
+    font-size: 1.25em;
+}
+textarea{
+    vertical-align: top;
 }
 button{
     background-color: #1C1C1C;
@@ -457,6 +475,9 @@ button{
     .card-calendar{
         margin: auto;
         grid-row: 2;
+    }
+    .label-form{
+        text-align: center;
     }
 
 }
